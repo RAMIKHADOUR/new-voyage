@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style2.css">
+  <title>Vacances</title>
+</head>
+
+<body>
+  <h1>Candidater pour partir en voyage</h1>
+
+  <p class="voy">Notre société <b>2vasion</b> vous propose de découvrir en avant première des lieux paradisiaques que
+    nous
+    souhaitons à notr catalogue. Merci de remplir les différents champs ci-dessous pour candidater au poste
+    d'<b>Eva'discover</b>!</p>
+
+
+  <form>
+    <div class="coordonnées">
+      <fieldset>
+        <legend>Coordonnées</legend>
+        <div>
+          <label for="email">Votre Email (*) :</label>
+          <input type="text" id="Email" name="Email" placeholder="ramikhaddour@gmail.com"><br><br>
+          <label for="tél">Votre Téléphone:</label>
+          <input type="tel" id="tél" name="tél" placeholder="0658583359">
+      </fieldset>
+    </div>
+
+    <div class="info">
+      <fieldset>
+        <legend>Informations personnelles</legend>
+
+        <label for="nom">Votre nom :</label>
+        <input type="text" id="nom" name="nom"><br><br>
+        <label for="prenom">Votre prenom:</label>
+        <input type="text" id="prenom" name="prenom">
+        <br>
+        <hr>
+        <spam>Vous etes plutot : </spam> <input type="radio" id="femme" name="femme" value="femme">
+        <label for="une femme">une femme</label><input type="radio" id="homme" name="homme" value="homme">
+        <label for="un homme">un homme</label><input type="radio" id="déterminer" name="déterminer" value="déterminer">
+        <label for="déterminer">à déterminer</label>
+        <br>
+        <hr>
+
+        <label for="adresse">Votre Adresse :</label>
+        <input type="text" id="adresse" name="adresse"><br><br>
+        <label for="code">Votre code postale:</label>
+        <input type="text" id="code" name="code" size="10"><br><br>
+        <label for="ville">Votre ville:</label>
+        <input type="text" id="ville" name="ville"><br><br>
+
+        <label for="pet-select">votre département :</label>
+
+        <select name="pets" id="pet-select">
+          <option value="Rhone-Alpes">Rhone-Alpes</option>
+          <option value="Auvergne">Auvergne</option>
+          <option value="Drome">Drome</option>
+
+        </select>
+        <br>
+        <hr>
+
+        <p>Quel budget étées vous à investir pour valider votre candidature?</p>
+        <label for="budget">Budget :</label><span>200€</span>&nbsp;<input type="range" name="budget" id="budget" min="200"
+          value="1000" max="3000" step="100" list="money">&nbsp;<span>3000€</span>
+        <datalist id="budget">
+          <option value="200" label="200">
+          <option value="600" label="600">
+          <option value="1400" label="1400">
+          <option value="2000" label="2000">
+            <option value="2600" label="2600">
+          <option value="3000" label="3000">
+
+        </datalist>
+
+
+    </div>
+
+    <div class="lang">
+      <fieldset>
+        <legend>Langues</legend>
+        <p>Merci de cocher toutes les langues que vous pratiquez : </p>
+        <input type="checkbox" id="anglais" name="anglais">
+        <label for="anglais">Anglais</label>
+        <input type="checkbox" id="français" name="français">
+        <label for="français">Français</label>
+        <input type="checkbox" id="espagnol" name="espagnol">
+        <label for="espagnol">Espagnol</label>
+        <input type="checkbox" id="italien" name="italien">
+        <label for="italien">Italien</label>
+        <input type="checkbox" id="allemand" name="allemand">
+        <label for="allemand">Allemand</label>
+        <input type="checkbox" id="arménien" name="arménien">
+        <label for="arménien">Arménien</label>
+
+
+    </div>
+    <div class="destin">
+      <fieldset>
+        <legend>Vos destinations de reves </legend>
+
+
+        <label for="destination">Choisir vos Destinations:</label>
+
+        <select name="destination" id="" style="height:150px; width:250px;" multiple>
+          <optgroup label="outer-mer">
+            <option value="martinique">Martinique</option>
+            <option value="réunion">Réunion</option>
+            <option value="guadaloup">Guadaloup</option>
+          </optgroup>
+          <optgroup label="etranger">Etranger
+            <option value="new-york">New-York</option>
+            <option value="hawai">Hawai</option>
+            <option value="brasil">Brasil</option>
+          </optgroup>
+        </select>
+        <br>
+        <br>
+        <em class="note">Bien maintenir la touche CTRL enforcée pour sélectionner plusieurs choix</em>
+
+    </div>
+  </form>
+
+  <button type="submit">Envoyer</button>
+
+</body>
+
+</html>

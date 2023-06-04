@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@400;700&display=swap');
+
+body{
+    background-image:linear-gradient(to bottom right, rgba(230, 84, 198, 0.2), rgba(36, 171, 212, 0.2)), url("assets/images/background.jpg");
+    font-family:'Baloo Thambi 2', cursive;  
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.voy,h1, button{
+    margin-left:40px;
+}
+
+fieldset{
+    border:1px  solid;
+    padding: 1%;
+    margin:2%;
+}
+label {
+    display: inline-block;
+    width: 200px;
+    text-align: right;
+    display:inline-flex
+}
+
+
+
+
+
+
+
+
